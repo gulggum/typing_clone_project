@@ -28,6 +28,7 @@ let quoteNo = 0; //quote 순번
 function onStartGame() {
   //reset버튼 작동
   onRestart();
+
   //타이머 시작
   if (!timer) {
     timer = setInterval(onTimer, 1000);
@@ -151,6 +152,7 @@ function onRestart() {
   inputEl.value = "";
   restartBtn.classList.add("hidden");
   quotesEl.textContent = `게임을 시작하려면 아래를 클릭하세요`;
+  timeEl.textContent = `60s`;
   errEl.textContent = error;
   accEl.textContent = accuracy;
   cpmEl.textContent = `...`;
