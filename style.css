@@ -1,0 +1,81 @@
+body {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: orange;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.infoBox_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.info_box {
+  padding: 0.8rem 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 0.8rem;
+}
+.info_box span:last-child {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  margin-bottom: 0.8rem;
+}
+.quotes {
+  font-size: 1.3rem;
+  background-color: olivedrab;
+  border-radius: 1rem;
+  padding: 0.8rem 1.5rem;
+  margin: 1rem 0;
+}
+.restart_message {
+  font-size: 1.2rem;
+  padding: 0.8rem;
+}
+.restart_btn {
+  padding: 1rem;
+  margin: 0 auto;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+.correct_span {
+  color: green;
+}
+.wrong_span {
+  color: red;
+}
+
+@media screen and (max-width: 700px) {
+  .infoBox_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
